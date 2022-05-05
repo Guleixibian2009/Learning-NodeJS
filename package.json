@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Guleixibian2009/Learning-NPM/issues"
   },
-  "homepage": "https://github.com/Guleixibian2009/Learning-NPM#readme"
+  "homepage": "https://github.com/Guleixibian2009/Learning-NPM#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
