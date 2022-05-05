@@ -1,0 +1,22 @@
+{
+  "name": "learning-npm",
+  "version": "1.0.0",
+  "description": "My first NodeJS-based project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guleixibian2009/Learning-NPM.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Guleixibian2009",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Guleixibian2009/Learning-NPM/issues"
+  },
+  "homepage": "https://github.com/Guleixibian2009/Learning-NPM#readme"
+}
