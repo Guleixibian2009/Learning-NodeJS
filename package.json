@@ -1,31 +1,41 @@
 {
-  "name": "learning-npm",
+  "name": "learning-nodejs",
   "version": "1.0.0",
   "description": "My first NodeJS-based project",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon -e js,json,ejs,css,xhtml ./bin/www"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Guleixibian2009/Learning-NPM.git"
+    "url": "git+https://github.com/Guleixibian2009/Learning-NodeJS.git"
   },
   "keywords": [
-    "NodeJS"
+    "NodeJS",
+    "ExpressJS"
   ],
   "author": "Guleixibian2009",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/Guleixibian2009/Learning-NPM/issues"
+    "url": "https://github.com/Guleixibian2009/Learning-NodeJS/issues"
   },
   "homepage": "https://github.com/Guleixibian2009/Learning-NPM#readme",
   "dependencies": {
+    "@types/bootstrap": "^5.1.10",
+    "@types/jquery": "^3.5.14",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1",
+    "cheerio": "^1.0.0-rc.10",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "jquery": "^3.6.0",
+    "jquery.scrollto": "^2.1.3",
+    "jsdom": "^19.0.0",
     "morgan": "~1.9.1",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "xmldom": "^0.6.0"
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
 
-    <title>Error!</title>
+    <title><%= title %></title>
     <link rel="stylesheet" href="../stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="../stylesheets/bootstrap-icons.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -26,10 +26,10 @@
           <div class="collapse navbar-collapse" id="nav">
             <ul class="navbar-nav container-fluid">
               <li class="nav-item">
-                <a class="nav-link text-white" href="/" target="_self"><i class="bi bi-house-door pe-1"></i>Home</a>
+                <a class="nav-link text-white" href="/"><i class="bi bi-house-door pe-1"></i>Home</a>
               </li>
               <li class="nav-item me-xl-auto">
-                <a class="nav-link text-white" href="#" target="_self"><i class="bi bi-person pe-1"></i>About</a>
+                <a class="nav-link text-white" href="#"><i class="bi bi-person pe-1"></i>About</a>
               </li>
               <hr class="d-xl-none text-white" />
               <li class="nav-item">
@@ -43,15 +43,25 @@
         </div>
       </nav>
     </header>
-    <main class="container py-4">
-      <h1>Oh no, an error here... <small class="text-muted">You got a <%= error.status %>.</small></h1>
-      <p>Error message is: </p>
-      <pre><%= message %></pre>
-      <p>Error occured at:</p>
-      <pre><%= error.stack %></pre>
+
+    <main class="d-xl-flex flex-xl-row align-items-stretch mx-1 mx-xl-5 px-1 px-xl-3 container-xl-fluid">
+      <nav class="d-none d-xl-block border-end border-light shadow-lg px-4 py-4 order-1 col-xl-3" id="TOC">
+        <!-- Table Of Contents goes here -->
+      </nav>
+      <div class="p-4 order-2 col-xl-9" id="Main">
+        <h2><%= title %></h2>
+        <div id="content-wrapper"></div>
+      </div>
     </main>
+
+    <footer class="container-fluid py-3 border-top bg-dark">
+      <div class="container-xl">
+        <div>
+          <p class="text-muted mb-0">&copy;2022 Made with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://github.com/guleixibian2009/">@Guleixibian2009</a>. This project is under the <strong>GPL-3.0</strong> License.</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="../javascripts/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-
