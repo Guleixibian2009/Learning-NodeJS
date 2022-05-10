@@ -36,7 +36,7 @@ $(document).ready(function(){
         var output = `<li class="${outputClass}"><button class="text-secondary btn btn-sm btn-outline-light p-1 border-0 rounded text-start">${outputNum}${el.innerHTML}</button></li>`
         OutputList = OutputList + output;
     });
-    OutputList = OutputList + `</ul><a href="https://github.com/guleixibian2009/awesome-bs5/" class="btn btn-lg btn-outline-warning w-100 mt-auto"><i class="bi bi-star-fill me-2"></i>Star me on GitHub!</a></div></div>`;
+    OutputList = OutputList + `</ul><a href="https://github.com/guleixibian2009/learning-nodejs/" class="btn btn-lg btn-outline-warning w-100 mt-auto"><i class="bi bi-star-fill me-2"></i>Star me on GitHub!</a></div></div>`;
     //Finally output!
     $("nav#TOC").html(OutputList);
 

@@ -49,8 +49,10 @@
         <!-- Table Of Contents goes here -->
       </nav>
       <div class="p-4 order-2 col-xl-9" id="Main">
-        <h2><%= title %></h2>
-        <div id="content-wrapper"></div>
+        <h2 class=""><%= title %></h2>
+        <div id="content-wrapper">
+          <%= main %>
+        </div>
       </div>
     </main>
 
@@ -63,5 +65,11 @@
     </footer>
 
     <script src="../javascripts/bootstrap.bundle.min.js"></script>
+    <script>
+      var nodes = document.getElementById("Main").getElementsByTagName("div");
+      for (const el of nodes) {
+        el.innerHTML = el.textContent;
+      }
+    </script>
   </body>
 </html>
